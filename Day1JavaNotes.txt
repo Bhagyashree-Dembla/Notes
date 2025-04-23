@@ -1,17 +1,3 @@
-
-Brand Name	Discount Information	Coupon Codes Link
-Educative.io	20% discount on Educative courses and plans	Get Coupon
-W3Schools	20% discount on W3Schools courses	Get Coupon
-KodeKloud	10% discount on KodeKloud courses and plans	Get Coupon
-GeeksforGeeks	30% discount on GeeksforGeeks courses	Get Coupon
-Target Test Prep	20% discount on Target Test Prep	Get Coupon
-Coding Ninjas	₹5000 discount on Coding Ninjas courses	Get Coupon
-Skillshare	40% discount on Skillshare	Get Coupon
-DataCamp	50% discount on DataCamp	Get Coupon
-365 Data Science	57% discount on 365 Data Science Plans	Get Coupon
-Get Smarter	Flat 20% discount on Get Smarter courses	Get Coupon
-SmartKeeda	Flat 40% discount on SmartKeeda courses	Get Coupon
-StackSocial	20% discount on StackSocial courses	Get Coupon
 1. What is a data type in Java?
 
 Answer: A data type in Java is a classification that specifies which type of data a variable can hold.
