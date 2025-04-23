@@ -1,0 +1,182 @@
+
+Brand Name	Discount Information	Coupon Codes Link
+Educative.io	20% discount on Educative courses and plans	Get Coupon
+W3Schools	20% discount on W3Schools courses	Get Coupon
+KodeKloud	10% discount on KodeKloud courses and plans	Get Coupon
+GeeksforGeeks	30% discount on GeeksforGeeks courses	Get Coupon
+Target Test Prep	20% discount on Target Test Prep	Get Coupon
+Coding Ninjas	₹5000 discount on Coding Ninjas courses	Get Coupon
+Skillshare	40% discount on Skillshare	Get Coupon
+DataCamp	50% discount on DataCamp	Get Coupon
+365 Data Science	57% discount on 365 Data Science Plans	Get Coupon
+Get Smarter	Flat 20% discount on Get Smarter courses	Get Coupon
+SmartKeeda	Flat 40% discount on SmartKeeda courses	Get Coupon
+StackSocial	20% discount on StackSocial courses	Get Coupon
+1. What is a data type in Java?
+
+Answer: A data type in Java is a classification that specifies which type of data a variable can hold.
+
+2. What are the two main categories of data types in Java?
+
+Answer: The two main categories of data types in Java are primitive data types and reference data types.
+
+3. How are primitive data types different from reference data types in Java?
+
+Answer: Primitive data types store simple values, while reference data types store references or addresses to objects.
+
+Doubt Question: In java if I have a variable with Integer data type, will it store the object or the address of the object?
+
+ChatGpt Answer: In Java, if you have a variable with the Integer data type (i.e., the wrapper class for the primitive int), the variable stores a reference (address) to the Integer object, not the object itself.
+
+Here’s a breakdown:
+int is a primitive type, and variables of type int store the actual value.
+
+Integer is a reference type (class), so variables of type Integer store a reference to an object of type Integer, not the actual value itself.
+
+Example:
+java
+Copy
+Edit
+Integer a = 100;
+Here, a holds a reference (internally, it's like a memory address) pointing to an Integer object that contains the value 100.
+
+Extra detail: Integer Caching
+For performance, Java caches Integer objects between -128 and 127. So:
+
+java
+Copy
+Edit
+Integer x = 100;
+Integer y = 100;
+System.out.println(x == y); // true, because of caching
+But:
+
+java
+Copy
+Edit
+Integer x = 200;
+Integer y = 200;
+System.out.println(x == y); // false, because different objects
+
+4. What is the purpose of declaring a variable in Java?
+
+Answer: Declaring a variable in Java reserves memory to store data and associates a name with the memory location.
+
+5. What is the syntax for declaring a variable in Java?
+
+Answer: The syntax for declaring a variable is: data_type variable_name;
+
+6. Give an example of declaring an integer variable in Java.
+
+Answer: Example: int myNumber;
+
+7. What is the purpose of initializing a variable in Java?
+
+Answer: Initializing a variable assigns an initial value to the variable, allowing it to be used in calculations and operations.
+
+8. What is the syntax for initializing a variable in Java?
+
+Answer: The syntax for initializing a variable is: data_type variable_name = initial_value;
+
+9. Give an example of declaring and initializing a double variable in Java.
+
+Answer: Example: double pi = 3.14159;
+
+10. What is the difference between ‘int’ and ‘double’ data types in Java, and when would you use each?
+
+Answer: ‘int’ is used for storing integer values, and ‘double’ is used for storing floating-point (decimal) values. Use ‘int’ for whole numbers and ‘double’ for numbers with fractions.
+
+ 
+
+11. What are the eight primitive data types in Java?
+
+Answer: The eight primitive data types in Java are byte, short, int, long, float, double, char, and boolean.
+
+12. What is the maximum value that can be stored in a ‘byte’ variable in Java?
+
+Answer: The maximum value for a ‘byte’ variable is 127.
+
+13. What is the difference between ‘float’ and ‘double’ data types in Java, and when would you use each?
+
+Answer: ‘float’ is a single-precision floating-point data type, and ‘double’ is a double-precision floating-point data type. 
+Use ‘float’ when you need to save memory, and ‘double’ when you need higher precision.
+
+Doubt Question: What is single precision and what is double precision?
+ChatGpt Answer: In computing, precision refers to how accurately a number can be represented, especially for floating-point (decimal) numbers.
+
+✅ Single Precision (float)
+Uses 32 bits (4 bytes) of memory.
+
+Precision: About 7 decimal digits.
+
+Syntax: float x = 3.14f; ← Notice the f at the end.
+
+Used when:
+
+1. Memory is limited (like in embedded systems or mobile).
+
+2. Perfect accuracy isn’t critical.
+
+✅ Double Precision (double)
+Uses 64 bits (8 bytes) of memory.
+
+Precision: About 15–16 decimal digits.
+
+Syntax: double y = 3.14; ← No suffix needed.
+
+Used when:
+
+1. You need more precision (e.g., scientific calculations, financial apps).
+
+2. Performance isn’t hindered by the extra memory.
+
+14. Explain the ‘char’ data type in Java, and how are characters represented?
+
+Answer: The ‘char’ data type is used to store a single Unicode character. Characters are represented using single quotes, e.g., ‘A’.
+
+15. What is the default value for a ‘boolean’ variable in Java?
+
+Answer: The default value for a ‘boolean’ variable is ‘false’.
+
+16. What is the ‘null’ value, and in which data types can it be used in Java?
+
+Answer: ‘null’ represents the absence of a value and can be assigned to reference data types like objects and strings.
+
+Doubt Question: what is the datatype of null and Do we have a wrapper class NULL?
+ChatGptAnswer: ✅ null can be assigned to any object reference.
+
+❌ No NULL wrapper class exists in Java.
+
+⚠️ Use null carefully to avoid NullPointerException!
+
+Comparison	Safe with null?	What it checks
+s == null	✅ Yes	Is s pointing to nothing
+s.equals(x)	❌ No	Will throw NullPointerException if s == null
+"value".equals(s)	✅ Yes	Compares safely, returns false if s is null
+
+String s = null;
+System.out.println(Objects.equals(s, "hello")); // ✅ false, no exception
+
+ public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
+17. How do you declare a constant variable in Java, and what is the naming convention for constants?
+
+Answer: Constants are declared using the ‘final’ keyword, and naming conventions typically use uppercase letters with underscores, e.g., final int MAX_VALUE = 100;.
+
+18. What is a variable’s scope in Java, and how does it affect where the variable can be used?
+
+Answer: Variable scope defines where in the code the variable is accessible. Variables can have local, instance, or class scope.
+
+19. What is the lifetime of a local variable in Java?
+
+Answer: Local variables exist only within the block or method where they are declared and have a shorter lifetime compared to instance or class variables.
+
+20. What is variable shadowing, and how does it occur in Java?
+
+Answer: Variable shadowing occurs when a local variable has the same name as an instance or class variable, making the local variable take precedence in that scope.
+
+21. What is type casting in Java, and when is it required?
+
+Answer: Type casting is the process of converting one data type to another. It is required when you need to assign a value from one type to another, such as from a ‘double’ to an ‘int’.
